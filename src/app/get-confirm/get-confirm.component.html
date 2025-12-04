@@ -1,0 +1,22 @@
+
+<div
+(click)="closeModal(false)"
+class="confirm-backdrop"
+    *ngIf="show">
+    <div class="card" (click)="$event.stopPropagation()">
+        <div class="card-header">
+       <ng-content select="h2"></ng-content>
+        </div>
+        <div class="card-body">
+      <ng-content select="p"></ng-content>
+        </div>
+        <div class="card-footer ">
+            <button 
+            (click)="closeModal(true)"
+            class="btn btn-sm btn-outline-info mr-3">Remove</button>
+             <button
+             (click)="closeModal(false )"
+              class="btn btn-sm btn-outline-danger">Close</button>
+        </div>
+    </div>
+</div>

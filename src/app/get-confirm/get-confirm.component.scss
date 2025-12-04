@@ -1,0 +1,12 @@
+
+.confirm-backdrop{
+    width:100%;
+    position: fixed;
+    background-color: rgba(0,0,0, .7);
+    height: 100vh;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
